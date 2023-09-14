@@ -10,7 +10,7 @@ const counterReducer = (state = 100, action) => {
     return newState;
   }
   return state;
-};   
+};
 
 const store = createStore(counterReducer);
 
@@ -46,5 +46,5 @@ const root = createRoot(container);
 
 root.render(<App />);
 store.subscribe(() => {
-  root.render(<App />);
+  root.render(<App />);   
 });
